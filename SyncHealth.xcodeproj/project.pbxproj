@@ -14,6 +14,7 @@
 		E5A474F22C4B2FDB00050D81 /* SyncHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A474F12C4B2FDB00050D81 /* SyncHealthTests.swift */; };
 		E5A474FC2C4B2FDB00050D81 /* SyncHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A474FB2C4B2FDB00050D81 /* SyncHealthUITests.swift */; };
 		E5A474FE2C4B2FDB00050D81 /* SyncHealthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A474FD2C4B2FDB00050D81 /* SyncHealthUITestsLaunchTests.swift */; };
+		E5A4750E2C4B316000050D81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A4750D2C4B316000050D81 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,9 @@
 		E5A474F72C4B2FDB00050D81 /* SyncHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyncHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A474FB2C4B2FDB00050D81 /* SyncHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncHealthUITests.swift; sourceTree = "<group>"; };
 		E5A474FD2C4B2FDB00050D81 /* SyncHealthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncHealthUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E5A4750A2C4B2FEF00050D81 /* SyncHealth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SyncHealth.entitlements; sourceTree = "<group>"; };
+		E5A4750D2C4B316000050D81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E5A4750F2C4B381600050D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +98,13 @@
 		E5A474DF2C4B2FD800050D81 /* SyncHealth */ = {
 			isa = PBXGroup;
 			children = (
+				E5A4750A2C4B2FEF00050D81 /* SyncHealth.entitlements */,
+				E5A4750D2C4B316000050D81 /* ViewController.swift */,
 				E5A474E02C4B2FD800050D81 /* SyncHealthApp.swift */,
 				E5A474E22C4B2FD800050D81 /* ContentView.swift */,
 				E5A474E42C4B2FDB00050D81 /* Assets.xcassets */,
 				E5A474E62C4B2FDB00050D81 /* Preview Content */,
+				E5A4750F2C4B381600050D81 /* Info.plist */,
 			);
 			path = SyncHealth;
 			sourceTree = "<group>";
@@ -257,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5A4750E2C4B316000050D81 /* ViewController.swift in Sources */,
 				E5A474E32C4B2FD800050D81 /* ContentView.swift in Sources */,
 				E5A474E12C4B2FD800050D81 /* SyncHealthApp.swift in Sources */,
 			);
@@ -419,11 +427,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SyncHealth/SyncHealth.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SyncHealth/Preview Content\"";
+				DEVELOPMENT_TEAM = 8B5Z9236A8;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/SyncHealth/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -434,7 +445,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ebay.SyncHealth;
+				PRODUCT_BUNDLE_IDENTIFIER = cjo.Synchealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -447,11 +458,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SyncHealth/SyncHealth.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SyncHealth/Preview Content\"";
+				DEVELOPMENT_TEAM = 8B5Z9236A8;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/SyncHealth/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -462,7 +476,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ebay.SyncHealth;
+				PRODUCT_BUNDLE_IDENTIFIER = cjo.Synchealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -477,7 +491,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ebay.SyncHealthTests;
@@ -496,7 +510,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ebay.SyncHealthTests;
@@ -514,7 +528,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ebay.SyncHealthUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -531,7 +545,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ebay.SyncHealthUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
